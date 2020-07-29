@@ -1,4 +1,4 @@
-# MARKET SEGMENTATION OF CREDIT CARD CUSTOMERS
+# CLUSTERING OF CREDIT CARD CUSTOMERS
 Data Source: [Kaggle](https://www.kaggle.com/arjunbhasin2013/ccdata)
 ### THE PROBLEM
 A bank has collected data on the usage behavior of their credit card holders over the last six months. The bank's marketing team wants to set up a marketing campaign by dividing these customers into groups in order to better target their needs. 
