@@ -39,7 +39,7 @@ The CUST_ID column doesn't contribute to the analysis process, so it is dropped.
 - Most customers have been with the bank for over 10 years
 ### 2.6 - K-MEANS CLUSTERING
 ![Mean Elbow Method](/images/3.png)<br />
-Using the elbow method, it's a little bit unclear where an elbow exactly forms. The curve does start to diminish around the 8th cluster so I went ahead and used eight for the test.<br />
+Using the elbow method, it's a little bit unclear where an elbow exactly forms. The curve does start dip and diminish around the 8th cluster so I went ahead and used eight clusters for the test.<br />
 ### 2.7 - THE CLUSTERS
 ![1](/images/4.png)<br />
 ![2](/images/5.png)<br />
@@ -71,9 +71,18 @@ Using the elbow method, it's a little bit unclear where an elbow exactly forms. 
 - Cluster 2 cardholders are frequently updating their balance, while generally keeping purchase frequency low
   * Cluster 2 cardholders probably make infrequent purchases and pay it off right away  
 #### CLUSTER 3
-
+- Cluster 3 cardholders make the largest purchases out of all the clusters
+  * This customer makes both one-off purchases as well as installment purchases with frequency
 #### CLUSTER 4
+- Cluster 4 cardholders are the most frequent cash advance takers
+- They have the largest credit card balances of the eight clusters
 #### CLUSTER 5
+- Cluster 5 cardholders are very similar to cluster 3 cardholders:
+  * They make large purchases as well as one-off purchases
+  * Unlike cluster 3 cardholders, cluster 5 cardholders do not make installment purchases as often.
 #### CLUSTER 6
+- Cluster 6 cardholders make the largest one-off and installment purchases
+  * Customers that could potentially use a loan or a line of credit
 #### CLUSTER 7
-
+- Cluster 7 cardholders mostly make installment purchases
+  * Another set of customers that could be targeted with loan or line or credit offers
