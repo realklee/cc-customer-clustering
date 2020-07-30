@@ -60,9 +60,8 @@ Using the elbow method, it's a little bit unclear where an elbow exactly forms. 
 ![17](/images/20.png)<br />
 ### CLUSTER TAKEAWAYS
 #### CLUSTER 0
-- The cardholders in this cluster are varied in purchase frequency
-- Most purchases are small purchases
-- Generally do not do any cash advances
+- Cluster 0 cardholders vary in purchase frequency
+  * Most purchases are for smaller dollar amounts
 #### CLUSTER 1
 - Unlike cluster 0, cluster 1 cardholders are more frequently making purchases
   * These purchases are for larger dollar amounts
