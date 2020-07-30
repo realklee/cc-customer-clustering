@@ -26,7 +26,7 @@ MINIMUM_PAYMENTS: Minimum amount of payments made by user<br />
 PRCFULL_PAYMENT: Percent of full payment paid by user<br />
 TENURE: Tenure of credit card service for user<br />
 ### 2.2 - CLEANING UP THE DATA
-The CUST_ID column doesn't contribute to the analysis process, so it is dropped. The data is then normalized through the use of StandardScaler from sci-kit learn.<br />
+The CUST_ID column doesn't contribute to the analysis, so it is dropped. The data is then normalized through the use of StandardScaler from sci-kit learn.<br />
 ### 2.3 - LOOKING AT THE DISTRIBUTION OF THE DATA
 ![Mean Histogram](/images/1.png)<br />
 ### 2.4 - CORRELATION HEATMAP
