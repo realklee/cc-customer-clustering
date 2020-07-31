@@ -92,7 +92,7 @@ Through PCA we are able to see some groups forming within the data, mostly in cl
 In this project we've been able to perform data pre-processing, k-means clustering, feature extraction with the use of principal component analysis, and data visualization. As a first attempt at business analytics through clustering and PCA, there are some things I'd like to be able to improve in the future.<br />
 1. The elbow method isn't exactly the clearest way of determining the optimal number of clusters, as we saw earlier on the graph
   * A better method would be using the silhouette coefficient 
-    - The silhouette score shows a peak rather than gentle bend in the elbow method, making the decision a lot more straightfoward and less subjective
+    - The silhouette score shows a peak rather than gentle bend in the elbow method, making the decision a lot more exact and less subjective
     - Having the silhouette score also helps in determining the optimal number of components used in PCA
 2. Testing out Gaussian Mixture Modeling
   * K-means forms data clusters circularly; Gaussian Mixture Modeling forms clusters with more freedom thus potentially greater accuracy
