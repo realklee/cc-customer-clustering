@@ -1,12 +1,10 @@
 # CLUSTERING OF CREDIT CARD CUSTOMERS
 Author: Kevin Lee<br />Email: kvnlee97@gmail.com<br />Data Source: [Kaggle](https://www.kaggle.com/arjunbhasin2013/ccdata)
-## 1 - DEFINING THE PROBLEM
 ### THE PROBLEM
 A bank has collected data on the usage behavior of their credit card holders over the last six months. The bank's marketing team wants to set up a marketing campaign by dividing these customers into groups in order to better target their needs.<br />
 ### THE GOAL
 The marketing team is looking for distinctive groups within the customer data in order to target product advertisements based on the usage behavior of the customer groups.<br />
-## 2 - DISCOVERING THE DATA
-### 2.1 - DATA DICTIONARY
+### DATA DICTIONARY
 CUST_ID: Identification of Credit Card holder<br />
 BALANCE: Balance amount left in their account to make purchases<br />
 BALANCE_FREQUENCY: How frequently the Balance is updated, score between 0 and 1 (1 = frequently updated, 0 = not frequently updated)<br />
@@ -25,22 +23,22 @@ PAYMENTS: Amount of Payment done by user<br />
 MINIMUM_PAYMENTS: Minimum amount of payments made by user<br />
 PRCFULL_PAYMENT: Percent of full payment paid by user<br />
 TENURE: Tenure of credit card service for user<br />
-### 2.2 - CLEANING UP THE DATA
+### CLEANING UP THE DATA
 The CUST_ID column doesn't contribute to the analysis, so it is dropped. The data is then normalized through the use of StandardScaler from sci-kit learn.<br />
-### 2.3 - LOOKING AT THE DISTRIBUTION OF THE DATA
+### LOOKING AT THE DISTRIBUTION OF THE DATA
 ![Mean Histogram](/images/1.png)<br />
-### 2.4 - CORRELATION HEATMAP
+### CORRELATION HEATMAP
 ![Mean Correlation](/images/2.png)<br />
-### 2.5 - POINTS OF INTEREST
+### POINTS OF INTEREST
 - There appears to be two groups of customers on the PURCHASES_FREQUENCY histogram:
   * Cardholders that make purchases frequently
   * Cardholders that rarely use their card for purchases
 - Most customers do not pay their balance in full
 - Most customers have been with the bank for over 10 years
-### 2.6 - K-MEANS CLUSTERING
+### K-MEANS CLUSTERING
 ![Mean Elbow Method](/images/3.png)<br />
 Using the elbow method, it's a little bit unclear where an elbow exactly forms. The curve does start dip and diminish around the 8th cluster so I went ahead and used eight clusters for the test.<br />
-### 2.7 - THE CLUSTERS
+### THE CLUSTERS
 ![1](/images/4.png)<br />
 ![2](/images/5.png)<br />
 ![3](/images/6.png)<br />
@@ -87,7 +85,7 @@ Using the elbow method, it's a little bit unclear where an elbow exactly forms. 
   * Another set of customers that could be targeted with loan or line or credit offers
 ### APPLYING PRINCIPAL COMPONENT ANALYSIS
 With principal component analysis we compress the 18 dimensions of the data into two dimensions of variation.<br />
-#### Visualization
+#### PCA VISUALIZATION
 ![18](/images/21.png)<br />
 Through PCA we are able to see some groups forming within the data, mostly in clusters 3, 4, and 6. The other clusters are more closely interrelated and thus we can see that the separation is a little more unclear. Through the explained variance ratio, we see that the first principal component contians 27.29% of the variance and the second principal componenet contains 20.30% of the variance. Together they carry 47.59% of the information, which isn't ideal, but expected from the compression of 18 dimensions into two.<br />
 ### CONCLUSIONS AND TAKEAWAYS
