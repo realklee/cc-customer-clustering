@@ -86,7 +86,7 @@ Using the elbow method, it's a little bit unclear where an elbow exactly forms. 
 - Cluster 7 cardholders mostly make installment purchases
   * Another set of customers that could be targeted with loan or line or credit offers
 ### APPLYING PRINCIPAL COMPONENT ANALYSIS
-With principal component analysis we aim to compress the 18 dimensions of the data into two dimensions of variation.<br />
+With principal component analysis we compress the 18 dimensions of the data into two dimensions of variation.<br />
 #### Visualization
 ![18](/images/21.png)<br />
 Through PCA we are able to see some groups forming within the data, mostly in clusters 3, 4, and 6. The other clusters are more closely interrelated and thus we can see that the separation is a little more unclear. Through the explained variance ratio, we see that the first principal component contians 27.29% of the variance and the second principal componenet contains 20.30% of the variance. Together they carry 47.59% of the information, which isn't ideal, but expected from the compression of 18 dimensions into two.<br />
