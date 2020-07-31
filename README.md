@@ -85,3 +85,16 @@ Using the elbow method, it's a little bit unclear where an elbow exactly forms. 
 #### CLUSTER 7
 - Cluster 7 cardholders mostly make installment purchases
   * Another set of customers that could be targeted with loan or line or credit offers
+### APPLYING PRINCIPAL COMPONENT ANALYSIS
+With principal component analysis we aim to compress the 18 dimensions of the data into two dimensions of variation.<br />
+#### Visualization
+![18](/images/21.png)<br />
+Through PCA we are able to see some groups forming within the data, mostly in clusters 3, 4, and 6. The other clusters are more closely interrelated and thus we can see that the separation is a little more unclear. Through the explained variance ratio, we see that the first principal component contians 27.29% of the variance and the second principal componenet contains 20.30% of the variance. Together they carry 47.59% of the information, which isn't ideal, but expected from the compression of 18 dimensions into two.<br />
+### CONCLUSIONS AND TAKEAWAYS
+In this project we've been able to perform data pre-processing, k-means clustering, feature extraction with the use of principal component analysis, and data visualization. As a first attempt at business analytics through clustering and PCA, there are some things I'd like to be able to improve in the future.<br />
+1. The elbow method isn't exactly the clearest way of determining the optimal number of clusters, as we saw earlier on the graph
+  * A better method would be using the silhouette coefficient 
+    - The silhouette score shows a peak rather than gentle bend in the elbow method, making the decision a lot more straightfoward and less subjective
+    - Having the silhouette score also helps in determining the optimal number of components used in PCA
+2. Testing out Gaussian Mixture Modeling
+  * K-means forms data clusters circularly; Gaussian Mixture Modeling forms clusters with more freedom thus potentially greater accuracy
